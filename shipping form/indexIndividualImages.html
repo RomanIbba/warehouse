@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+         /* body{
+             background-image:url(background.jpeg);
+            background-size: 80% 100%;
+            background-attachment: fixed; 
+            background-color: RGB(33,99,176);
+        }  */
+         .image{
+            height: 100%;
+            background: RGB(33,99,176);
+            display: flex;
+            justify-content: center;
+        } 
+        *,*::before,*::after{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #262626;
+            font-family:'Bariol';
+            font-size: 16px;
+        }
+        .wrapper{
+            display: grid;
+            background-color: #fff;
+            width:125vh;
+            max-width: 100%;
+            height: 100vh;
+            margin: 0px auto;
+            grid-gap: 5px;
+            grid-template-columns: repeat(7,1fr);
+            grid-template-rows: repeat(10,1fr);
+            
+        }
+        .box{
+            background-color: white;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+        }
+        .box.one{
+            grid-column:span 4;
+            grid-row:span 2;
+            /* background-image: url(inbound.PNG); */
+        }
+        .box.two{
+            grid-column:5/ span 3;
+            grid-row:2/ span 3;
+            /* background-image: url(track.PNG); */
+        }
+        .box.three{
+            grid-column:2/ span 2;
+            grid-row:4/ span 3;
+            /* background-image: url(location.PNG); */
+        }
+        .box.four{
+            grid-column:5/ span 3;
+            grid-row:6/ span 2;
+            /* background-image: url(manage.PNG); */
+        }
+        .box.five{
+            grid-column:span 4;
+            grid-row:8/ span 2;
+            /* background-image: url(outbound.PNG); */
+        }
+        .btn1 {
+            /*grid-column:4/ span 4;
+            grid-row:4/ span 2;*/
+            position: absolute;
+             top: 10%;
+            left: 40%;  
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: lightgreen;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btn2 {
+            /*grid-column:4/ span 4;
+            grid-row:4/ span 2;*/
+            position: absolute;
+             top: 20%;
+            left: 70%;  
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: lightgreen;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btn3 {
+            /*grid-column:4/ span 4;
+            grid-row:4/ span 2;*/
+            position: absolute;
+             top: 40%;
+            left: 40%;  
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: lightgreen;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btn4 {
+            /*grid-column:4/ span 4;
+            grid-row:4/ span 2;*/
+            position: absolute;
+             top: 55%;
+            left: 70%;  
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: lightgreen;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btn5 {
+            /*grid-column:4/ span 4;
+            grid-row:4/ span 2;*/
+            position: absolute;
+             top: 75%;
+            left: 40%;  
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: lightgreen;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .bg {
+            animation:slide 3s ease-in-out infinite alternate;
+            background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+            bottom:0;
+            left:-50%;
+            opacity:.5;
+            position:fixed;
+            right:-50%;
+            top:0;
+            z-index:-1;
+        }
+        .bg2 {
+        animation-direction:alternate-reverse;
+        animation-duration:4s;
+        }
+        .bg3 {
+        animation-duration:5s;
+        }
+        @keyframes slide {
+            0% {
+                transform:translateX(-25%);
+            }
+            100% {
+                transform:translateX(25%);
+            }
+        }
+        .dot {
+        --c:red;  /* color */
+        --r:10px; /* circle size */
+        --s:10px; /* space bettwen circles */
+        
+        width:100px;
+        height:100px;
+        display:inline-block;
+        margin:20px;
+        position:absolute;
+        top: 10%;
+        left: 40%; 
+        --g:radial-gradient(circle closest-side, var(--c) 85%,transparent);
+        background:
+            var(--g) calc(var(--s)/-2) 0/calc(var(--r) + var(--s)) var(--r) repeat-x,
+            var(--g) 0 calc(var(--s)/-2)/var(--r) calc(var(--r) + var(--s)) repeat-y;
+        }
+
+        .dot::after {
+        content:"";
+        position:absolute;
+        top:calc(var(--r)/2);
+        left:100%;
+        width:20px;
+        height:20px;
+        transform:translateY(-50%);
+        background:var(--c);
+        clip-path:polygon(0 0, 100% 50%,0 100%);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="wrapper">
+        <div class="one box"><img class="img" src="inbound.PNG" width="100%" ><a class="btn1" href="tracking/inbound.html">Inbound</a></div>
+        <div class="two box"><img class="" src="track.PNG" width="100%" ><a class="btn2" href="tracking/track.html">Track & Allocate Inventory</a></div>
+        <div class="three box"><img class="" src="location.PNG"  width="100%" ><a class="btn3" href="tracking/location.html">Location & Putaway</a></div>
+        <div class="four box"><img class="" src="manage.PNG" width="100%"><a class="btn4" href="tracking/manage.html">Manage Inventory</a></div>
+        <div class="five box"><img class="" src="outbound.PNG" width="100%"><a class="btn5" href="tracking/outbound.html">Outbound</a></div>
+    </div> -->
+
+
+    <!-- <div class="dot"></div>
+    <div class="dot" style="transform:scaleY(-1);--c:green;width:150px;--r:5px;top:10%;left:40%;"></div>
+        <div class="dot" style="transform:scale(-1);--c:blue;width:20%;--s:5px;top:20%;left:50%"></div>
+    <div class="dot" style="transform:scale(-1);--c:blue;width:80px;--s:5px;"></div> -->
+    <!-- --><div class="image">
+        <img src="background.PNG"
+            style="width:800px; height:828px; justify-content: center; display: flex;"
+            usemap="#sm">
+    </div>
+ 
+    <map name="sm">
+        <area shape="react" coords= "210,100,390,165" 
+        href="tracking/inbound.html" taget="_blank">
+
+        <area shape="react" coords= "515,215,710,275" 
+        href="tracking/track.html" taget="_blank">
+
+        <area shape="react" coords= "120,385,315,425" 
+        href="tracking/location.html" taget="_blank">
+
+        <area shape="react" coords= "410,455,595,535" 
+        href="tracking/manage.html" taget="_blank">
+
+        <area shape="react" coords= "40,625,210,740" 
+        href="tracking/outbound.html" taget="_blank">
+    </map>
+</body>
+</html>
