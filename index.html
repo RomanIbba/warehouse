@@ -43,9 +43,9 @@
             }
         } */
         .mobile-image{
-            display: block;
-            width:600px;
-            height:1000px;
+            display: flex;
+            /* width:850px;
+            height:1734px; */
             
         }
         .desktop-image{
@@ -56,9 +56,9 @@
         display: none;
         }
         .desktop-image{
-            display: block;
-            width:1200px;
-            height:828px;
+            display: flex;
+            /* width:1200px;
+            height:665px; */
             
         }
         }
@@ -71,10 +71,10 @@
 
     <div class="image">
         <!-- <div class="mobile-image"> -->
-            <img class="mobile-image" src="mobileView.PNG">
+            <img class="mobile-image" src="mobileViewNew.PNG" style="width:850px; height:1724px;justify-content: center;" usemap="#sm2">
         <!-- </div>
         <div class="desktop-image"> -->
-            <img class="desktop-image" src="computerView.PNG">
+            <img class="desktop-image" src="computerView.PNG" style="width:1200px; height:665px;justify-content: center; " usemap="#sm1">
         <!-- </div> -->
     </div>
     
@@ -100,20 +100,37 @@
             usemap="#sm"> -->
     <!-- </div> -->
  
-    <map name="sm">
-        <area shape="react" coords= "210,100,390,165" 
+    <map name="sm1">
+        <area shape="react" coords= "390,40,545,205" 
         href="tracking/inbound.html" taget="_blank">
 
-        <area shape="react" coords= "515,215,710,275" 
+        <area shape="react" coords= "740,120,865,260" 
         href="tracking/track.html" taget="_blank">
 
-        <area shape="react" coords= "120,385,315,425" 
+        <area shape="react" coords= "465,295,595,415" 
         href="tracking/location.html" taget="_blank">
 
-        <area shape="react" coords= "410,455,595,535" 
+        <area shape="react" coords= "720,390,865,490" 
         href="tracking/manage.html" taget="_blank">
 
-        <area shape="react" coords= "40,625,210,740" 
+        <area shape="react" coords= "370,525,525,615" 
+        href="tracking/outbound.html" taget="_blank">
+    </map>
+
+    <map name="sm2">
+        <area shape="react" coords= "335,125,490,225" 
+        href="tracking/inbound.html" taget="_blank">
+
+        <area shape="react" coords= "165,425,310,545" 
+        href="tracking/track.html" taget="_blank">
+
+        <area shape="react" coords= "380,685,520,810" 
+        href="tracking/location.html" taget="_blank">
+
+        <area shape="react" coords= "240,1040,395,1140" 
+        href="tracking/manage.html" taget="_blank">
+
+        <area shape="react" coords= "385,1390,1040,1500" 
         href="tracking/outbound.html" taget="_blank">
     </map>
 </body>
