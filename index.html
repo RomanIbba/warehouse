@@ -1,137 +1,103 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title></title>
-    <style type="text/css">
-        /*  body{
-             background-image:url(background.jpeg);
-            background-size: 80% 100%;
-            background-attachment: fixed; 
-            background-color: RGB(33,99,176);
-        }  */
-           .image{
-            height: 100%;
-            background: white; /* RGB(33,99,176); */
-            display: flex;
-            justify-content: center;
-        } 
-       /* *,*::before,*::after{
-            margin:0;
-            padding:0;
-            box-sizing: border-box;
-       }
-        .img-responsive.mobile {
-            display: none;
-        }
-
-         /* @media only screen and (min-device-width: 480px) {
-            .image img{
-                width:1200px;
-                height:828px;
-                background: green;
-                display: flex;
-                justify-content: center;
-            }
-        } 
-        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-            .image img{
-                width:auto;
-                height:800px;
-                background: red;
-                display: flex;
-                justify-content: center;
-            }
-        } */
-        .mobile-image{
-            display: block;
-            /* width:850px;
-            height:1734px; */
-            
-        }
-        .desktop-image{
-        display: none;
-        }
-        @media (min-width:992px){
-        .mobile-image{
-        display: none;
-        }
-        .desktop-image{
-            display: block;
-            /* width:1200px;
-            height:665px; */
-            
-        }
-        }
-    </style> 
+    <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- My Stylesheet-->
+  <link rel="stylesheet" href="style.css">
     
-        
-    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link href="A.style.css+css,,_responsive,,_responsive.css,Mcc.yekdkJPGxR.css.pagespeed.cf.oBqjnKnPPY.css" rel="stylesheet" /> -->
 </head>
-<body>
-
-    <div class="image">
-        <!-- <div class="mobile-image"> -->
-            <img class="mobile-image" src="mobileViewSnip.PNG" style="width:850px; height:1724px;" usemap="#sm2">
-        <!-- </div>
-        <div class="desktop-image"> -->
-            <img class="desktop-image" src="computerView.PNG" style="width:1200px; height:665px; " usemap="#sm1">
-        <!-- </div> -->
-    </div>
+<body style="height: 100vh">
+    <div class="content-wrapper" style="min-height: 674px; width: 100vw">
+    <section class="content">
+        <div class="container-fluid">
+          <!-- Small boxes (Stat box) -->
+          <div class="row">
+            <div class=" col-12 ">
+              <!-- small box -->
+              <div class="small-box bg-info">
+                <div class="inner" style="height:15vh;position:relative;">
+                  <h3 style='position:absolute;left:2;top:20%'>Inbound<sup style="font-size: 20px"></sup></h3>
+  
+                  <!-- <p>Inbound</p> -->
+                </div>
+                <div class="icon">
+                  <i class="ion ion-plane" style="color: white;position:absolute;top:15%"></i>
+                </div>
+                <a href="#" class="small-box-footer" >More info <i class="ion ion-arrow-right-c"></i></a>
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class=" col-12">
+              <!-- small box -->
+              <div class="small-box bg-success">
+                <div class="inner" style="height:15vh">
+                  <h3 style='position:absolute;left:2;top:20%'>Track & Allocate Inventory<sup style="font-size: 20px"></sup></h3>
+  
+                  <!-- <p>Bounce Rate</p> -->
+                </div>
+                <div class="icon">
+                  <i class="ion ion-clipboard" style="color: white;position:absolute;top:15%"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="ion ion-arrow-right-c"></i></a>
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class=" col-12">
+              <!-- small box -->
+              <div class="small-box bg-warning">
+                <div class="inner" style="height:15vh; ">
+                  <h3 style='position:absolute;left:2;top:20%'>Location & Putaway<sup style="font-size: 20px"></sup></h3>
+  
+                  <!-- <p>User Registrations</p> -->
+                </div>
+                <div class="icon">
+                  <i class="ion ion-person-add" style="color: white;position:absolute;top:15%"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="ion ion-arrow-right-c"></i></a>
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class=" col-12">
+              <!-- small box -->
+              <div class="small-box bg-danger">
+                <div class="inner" style="height:15vh">
+                  <h3 style='position:absolute;left:2;top:20%'>Manage Inventory <sup style="font-size: 20px"></sup></h3>
+  
+                  <!-- <p>Unique Visitors</p> -->
+                </div>
+                <div class="icon">
+                  <i class="ion ion-pie-graph" style="color: white;position:absolute;top:15%"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="ion ion-arrow-right-c"></i></a>
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class=" col-12">
+                <!-- small box -->
+                <div class="small-box bg-purple">
+                  <div class="inner" style="height:15vh">
+                    <h3 style='position:absolute;left:2;top:20%'>Outbound <sup style="font-size: 20px"></sup></h3>
     
-    <!-- <div class="image"> -->
-       <!-- <img src="computerView.PNG" class="img-responsive careerpage" style="width:1200px; height:828px; justify-content: center; display: flex;"
-        usemap="#sm">
-        <img src="mobileView.PNG" class="img-responsive careerpage mobile" style="width:400px; height:828px; justify-content: center; display: flex;"
-        usemap="#sm">-->
-         <!-- <picture>
-            <source 
-               media="(min-width: 480px)"
-               srcset="computerView.PNG"
-               usemap="#sm">
-            <source 
-               media="(max-width: 480px)"
-               srcset="images/location.PNG"
-               usemap="#sm">
-            <img src="images/location.PNG"
-               > 
-        </picture> -->
-        <!-- <img src="computerView.PNG"
-            style="width:c; height:828px; justify-content: center; display: flex;"
-            usemap="#sm"> -->
-    <!-- </div> -->
- 
-    <map name="sm1">
-        <area shape="react" coords= "390,40,545,205" 
-        href="tracking/inbound.html" taget="_blank">
-
-        <area shape="react" coords= "740,120,865,260" 
-        href="tracking/track.html" taget="_blank">
-
-        <area shape="react" coords= "465,295,595,415" 
-        href="tracking/location.html" taget="_blank">
-
-        <area shape="react" coords= "720,390,865,490" 
-        href="tracking/manage.html" taget="_blank">
-
-        <area shape="react" coords= "370,525,525,615" 
-        href="tracking/outbound.html" taget="_blank">
-    </map>
-
-    <map name="sm2">
-        <area shape="react" coords= "335,125,490,225" 
-        href="tracking/inbound.html" taget="_blank">
-
-        <area shape="react" coords= "165,425,310,545" 
-        href="tracking/track.html" taget="_blank">
-
-        <area shape="react" coords= "380,685,520,810" 
-        href="tracking/location.html" taget="_blank">
-
-        <area shape="react" coords= "240,1040,395,1140" 
-        href="tracking/manage.html" taget="_blank">
-
-        <area shape="react" coords= "385,1390,1040,1500" 
-        href="tracking/outbound.html" taget="_blank">
-    </map>
+                    <!-- <p>Inbound</p> -->
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-map" style="color: white;position:absolute;top:15%"></i>
+                  </div>
+                  <a href="#" class="small-box-footer">More info <i class="ion ion-arrow-right-c"></i></a>
+                </div>
+              </div>
+              <!-- ./col -->
+          </div>
+          <!-- /.row -->
+          <!-- Main row -->
+        </div>
+          
+        </div><!-- /.container-fluid -->
+      </section>
 </body>
 </html>

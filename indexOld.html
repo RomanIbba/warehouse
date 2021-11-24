@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        /*  body{
+             background-image:url(background.jpeg);
+            background-size: 80% 100%;
+            background-attachment: fixed; 
+            background-color: RGB(33,99,176);
+        }  */
+           .image{
+            height: 100%;
+            background: white; /* RGB(33,99,176); */
+            display: flex;
+            justify-content: center;
+        } 
+       /* *,*::before,*::after{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+       }
+        .img-responsive.mobile {
+            display: none;
+        }
+
+         /* @media only screen and (min-device-width: 480px) {
+            .image img{
+                width:1200px;
+                height:828px;
+                background: green;
+                display: flex;
+                justify-content: center;
+            }
+        } 
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            .image img{
+                width:auto;
+                height:800px;
+                background: red;
+                display: flex;
+                justify-content: center;
+            }
+        } */
+        .mobile-image{
+            display: block;
+            /* width:850px;
+            height:1734px; */
+            
+        }
+        .desktop-image{
+        display: none;
+        }
+        @media (min-width:992px){
+        .mobile-image{
+        display: none;
+        }
+        .desktop-image{
+            display: block;
+            /* width:1200px;
+            height:665px; */
+            
+        }
+        }
+    </style> 
+    
+        
+    
+</head>
+<body>
+
+    <div class="image">
+        <!-- <div class="mobile-image"> -->
+            <img class="mobile-image" src="mobileViewSnip.PNG" style="width:850px; height:1724px;" usemap="#sm2">
+        <!-- </div>
+        <div class="desktop-image"> -->
+            <img class="desktop-image" src="computerView.PNG" style="width:1200px; height:665px; " usemap="#sm1">
+        <!-- </div> -->
+    </div>
+    
+    <!-- <div class="image"> -->
+       <!-- <img src="computerView.PNG" class="img-responsive careerpage" style="width:1200px; height:828px; justify-content: center; display: flex;"
+        usemap="#sm">
+        <img src="mobileView.PNG" class="img-responsive careerpage mobile" style="width:400px; height:828px; justify-content: center; display: flex;"
+        usemap="#sm">-->
+         <!-- <picture>
+            <source 
+               media="(min-width: 480px)"
+               srcset="computerView.PNG"
+               usemap="#sm">
+            <source 
+               media="(max-width: 480px)"
+               srcset="images/location.PNG"
+               usemap="#sm">
+            <img src="images/location.PNG"
+               > 
+        </picture> -->
+        <!-- <img src="computerView.PNG"
+            style="width:c; height:828px; justify-content: center; display: flex;"
+            usemap="#sm"> -->
+    <!-- </div> -->
+ 
+    <map name="sm1">
+        <area shape="react" coords= "390,40,545,205" 
+        href="tracking/inbound.html" taget="_blank">
+
+        <area shape="react" coords= "740,120,865,260" 
+        href="tracking/track.html" taget="_blank">
+
+        <area shape="react" coords= "465,295,595,415" 
+        href="tracking/location.html" taget="_blank">
+
+        <area shape="react" coords= "720,390,865,490" 
+        href="tracking/manage.html" taget="_blank">
+
+        <area shape="react" coords= "370,525,525,615" 
+        href="tracking/outbound.html" taget="_blank">
+    </map>
+
+    <map name="sm2">
+        <area shape="react" coords= "335,125,490,225" 
+        href="tracking/inbound.html" taget="_blank">
+
+        <area shape="react" coords= "165,425,310,545" 
+        href="tracking/track.html" taget="_blank">
+
+        <area shape="react" coords= "380,685,520,810" 
+        href="tracking/location.html" taget="_blank">
+
+        <area shape="react" coords= "240,1040,395,1140" 
+        href="tracking/manage.html" taget="_blank">
+
+        <area shape="react" coords= "385,1390,1040,1500" 
+        href="tracking/outbound.html" taget="_blank">
+    </map>
+</body>
+</html>
